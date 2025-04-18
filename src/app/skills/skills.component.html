@@ -1,0 +1,20 @@
+<nav class="navbar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/about']">About Me</a></li>
+        <li><a [routerLink]="['/skills']">Skills</a></li>
+        <li><a [routerLink]="['/experience']">Experience</a></li>
+        <li><a href="#">Contact Me</a></li>
+    </ul>
+    <button class="resume-btn">Resume</button>
+</nav>
+<div class="skills-section">
+    <h1>My <strong>Skills</strong></h1>
+    <div class="skills-grid">
+        <div class="skill-card" *ngFor="let skill of skills" [ngClass]="{'highlighted': skill.highlighted}">
+            <img [src]="skill.icon" [alt]="skill.name">
+            <p>{{ skill.name }}</p>
+        </div>
+    </div>
+</div>
