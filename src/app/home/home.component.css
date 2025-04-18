@@ -12,17 +12,20 @@ html {
     color: #000;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     background-color: #f7f6f3;
+    font-family: 'Poppins', sans-serif;
 
     .logo {
         font-weight: bold;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-links {
@@ -60,8 +63,9 @@ html {
 
         h1,
         h2 {
+            font-weight: 100;
             margin-bottom: 10px;
-            font-size: 32px;
+            font-size: 42px;
 
             .bold {
                 font-weight: bold;

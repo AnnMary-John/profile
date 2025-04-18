@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .about-container {
     display: flex;
     align-items: center;
@@ -43,4 +50,42 @@
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     color: #555;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #f7f6f3;
+    font-family: 'Poppins', sans-serif;
+
+    .logo {
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+    }
+
+    .resume-btn {
+        padding: 8px 20px;
+        background: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 }

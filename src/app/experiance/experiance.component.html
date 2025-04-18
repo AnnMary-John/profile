@@ -1,0 +1,32 @@
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/about']">About Me</a></li>
+
+        <li><a href="#">Skills</a></li>
+        <li><a [routerLink]="['/experience']">Experience</a></li>
+        <li><a href="#">Contact Me</a></li>
+    </ul>
+    <button class="resume-btn">Resume</button>
+</nav>
+<div class="experience-section">
+    <h1>My <strong>Experience</strong></h1>
+    <div class="experience-card" *ngFor="let job of jobs">
+        <div class="experience-header">
+            <img [src]="job.icon" alt="{{job.company}} logo" class="company-icon">
+            <div class="job-title">
+                <strong>{{job.title}}</strong> at {{job.company}}
+                <a [href]="job.link" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/externallink.png" class="link" alt="Illustration of a person">
+                </a>
+            </div>
+
+            <div class="job-duration">
+                {{job.duration}}
+            </div>
+        </div>
+        <p>{{job.description}}</p>
+    </div>
+</div>
