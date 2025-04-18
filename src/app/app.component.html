@@ -1,2 +1,17 @@
-<h1>Welcome to My Angular Website!</h1>
-<p>This app is deployed using GitHub Pages 🚀</p>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/about']">About Me</a></li>
+
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact Me</a></li>
+    </ul>
+    <button class="resume-btn">Resume</button>
+</nav>
+
+<div class="hero">
+    <router-outlet></router-outlet>
+</div>
